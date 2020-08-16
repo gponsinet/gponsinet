@@ -1,0 +1,15 @@
+{
+  "name": "gponsinet",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:gponsinet/gponsinet",
+  "author": "Godefroy Ponsinet <gponsinet@pm.me>",
+  "license": "MIT",
+  "scripts": {
+    "generate:readme": "./scripts/generate-readme.js"
+  },
+  "dependencies": {
+    "@octokit/rest": "^18.0.3",
+    "esm": "^3.2.25"
+  }
+}
