@@ -1,0 +1,19 @@
+{
+  "name": "gponsinet",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "authors": {
+    "name": "Godefroy Ponsinet",
+    "email": "gponsinet@pm.me"
+  },
+  "repository": "https://github.com/gponsinet/gponsinet/gponsinet",
+  "scripts": {
+    "dev": "vuepress dev src",
+    "build": "vuepress build src"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^1.5.3"
+  }
+}

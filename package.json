@@ -1,0 +1,11 @@
+{
+  "name": "gponsinet",
+  "version": "1.0.0",
+  "repository": "https://github.com/gponsinet/gponsinet",
+  "author": "Godefroy Ponsinet <gponsinet@pm.me>",
+  "private": true,
+  "volta": {
+    "node": "12.19.0",
+    "yarn": "1.22.10"
+  }
+}
