@@ -1,0 +1,33 @@
+{
+  "private": true,
+  "version": "0.0.0",
+  "workspaces": {
+    "packages": []
+  },
+  "engines": {
+    "npm": ">=7.0.0",
+    "node": ">=15.0.0",
+    "yarn": "Please use npm 7 or later"
+  },
+  "scripts": {
+    "postinstall": "make postinstall",
+    "prepare": "make prepare",
+    "release": "make release",
+    "lint": "make lint",
+    "lint:fix": "make lint.fix"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-conventional": "^11.0.0",
+    "@react-native-community/eslint-config": "^2.0.0",
+    "commitizen": "^4.2.2",
+    "standard-version": "^9.0.0"
+  },
+  "volta": {
+    "node": "15.0.1",
+    "npm": "7.0.3"
+  },
+  "dependencies": {
+    "husky": "^5.0.0-beta.0"
+  }
+}
