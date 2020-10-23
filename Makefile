@@ -20,8 +20,15 @@ install:
 	volta pin npm@7
 	npm install
 
+lint:
+	npx eslint_d .
+
+lint.fix:
+	npx eslint_d fix
+
 postinstall:
 	npx husky install
+	ln -sf eslint_d node_modules/.bin/eslint
 
 release:
 	npx standard-version
@@ -31,8 +38,10 @@ commit-msg:
 	npx commitlint -E HUSKY_GIT_PARAMS
 
 pre-commit:
+	make lint
 
 pre-push:
+	make lint
 
 push.all.amend:
 	git add --all
