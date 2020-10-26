@@ -1,0 +1,21 @@
+on:
+  push:
+    branches:
+      - master
+      - main
+jobs:
+  default:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - name: setup
+        uses: fregante/setup-git-user@v1
+      - name: install
+        run:
+          make install
+      - name: release
+        run:
+          make release
