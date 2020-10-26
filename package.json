@@ -7,7 +7,12 @@
   "author": "Godefroy Ponsinet <gponsinet@pm.me>",
   "license": "MIT",
   "scripts": {
-    "generate:readme": "./scripts/generate-readme.js"
+    "postinstall": "make postinstall",
+    "prepare": "make prepare",
+    "release": "make release",
+    "lint": "make lint",
+    "lint:fix": "make lint.fix",
+    "gen:readme": "make gen.readme"
   },
   "workspaces": {
     "packages": []
@@ -16,13 +21,6 @@
     "npm": ">=7.0.0",
     "node": ">=15.0.0",
     "yarn": "Please use npm 7 or later"
-  },
-  "scripts": {
-    "postinstall": "make postinstall",
-    "prepare": "make prepare",
-    "release": "make release",
-    "lint": "make lint",
-    "lint:fix": "make lint.fix"
   },
   "dependencies": {
     "@octokit/rest": "^18.0.3"

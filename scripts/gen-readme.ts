@@ -1,5 +1,3 @@
-#!/usr/bin/env node -r esm
-
 import { Octokit } from '@octokit/rest'
 const octokit = new Octokit()
 

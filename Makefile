@@ -24,7 +24,7 @@ lint:
 	npx eslint_d .
 
 lint.fix:
-	npx eslint_d fix
+	npx eslint_d --fix .
 
 postinstall:
 	npx husky install
@@ -47,3 +47,6 @@ push.all.amend:
 	git add --all
 	git commit --amend
 	git push -f
+
+gen.readme:
+	npx babel-node --extensions .ts scripts/gen-readme.ts
